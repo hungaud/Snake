@@ -1,0 +1,21 @@
+C:\Users\Hung Auduong\source\repos\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Hung Auduong\source\repos\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Hung Auduong\source\repos\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.Cache
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.pdb
+C:\Users\Hung Auduong\source\repos\Snake\Snake\obj\Debug\Snake.SnakeHome.resources
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.Cache
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.pdb
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.SnakeGame.resources
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.SnakeHome.resources
