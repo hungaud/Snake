@@ -33,6 +33,9 @@
          this.menuQuit = new System.Windows.Forms.ToolStripMenuItem();
          this.aboutMenuTab = new System.Windows.Forms.ToolStripMenuItem();
          this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
+         this.playPauseButton = new System.Windows.Forms.Button();
+         this.scoreTextLabel = new System.Windows.Forms.Label();
+         this.scoreLabel = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.gameFramePictureBox)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.sideInfoPictureBox)).BeginInit();
@@ -42,9 +45,9 @@
          // pictureBox1
          // 
          this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-         this.pictureBox1.Location = new System.Drawing.Point(545, 569);
+         this.pictureBox1.Location = new System.Drawing.Point(540, 569);
          this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+         this.pictureBox1.Size = new System.Drawing.Size(30, 30);
          this.pictureBox1.TabIndex = 2;
          this.pictureBox1.TabStop = false;
          // 
@@ -59,7 +62,8 @@
          // 
          // sideInfoPictureBox
          // 
-         this.sideInfoPictureBox.BackColor = System.Drawing.Color.Black;
+         this.sideInfoPictureBox.BackColor = System.Drawing.Color.DimGray;
+         this.sideInfoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
          this.sideInfoPictureBox.Location = new System.Drawing.Point(610, 24);
          this.sideInfoPictureBox.Name = "sideInfoPictureBox";
          this.sideInfoPictureBox.Size = new System.Drawing.Size(290, 610);
@@ -119,12 +123,49 @@
          this.menuAbout.Size = new System.Drawing.Size(107, 22);
          this.menuAbout.Text = "About";
          // 
+         // playPauseButton
+         // 
+         this.playPauseButton.BackColor = System.Drawing.Color.Black;
+         this.playPauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+         this.playPauseButton.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.playPauseButton.ForeColor = System.Drawing.Color.Lime;
+         this.playPauseButton.Location = new System.Drawing.Point(655, 545);
+         this.playPauseButton.Name = "playPauseButton";
+         this.playPauseButton.Size = new System.Drawing.Size(200, 75);
+         this.playPauseButton.TabIndex = 0;
+         this.playPauseButton.Text = "P L A Y";
+         this.playPauseButton.UseVisualStyleBackColor = false;
+         this.playPauseButton.Click += new System.EventHandler(this.playPauseButton_Click);
+         // 
+         // scoreTextLabel
+         // 
+         this.scoreTextLabel.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.scoreTextLabel.Location = new System.Drawing.Point(680, 47);
+         this.scoreTextLabel.Name = "scoreTextLabel";
+         this.scoreTextLabel.Size = new System.Drawing.Size(150, 42);
+         this.scoreTextLabel.TabIndex = 4;
+         this.scoreTextLabel.Text = "S C O R E";
+         this.scoreTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+         // 
+         // scoreLabel
+         // 
+         this.scoreLabel.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.scoreLabel.Location = new System.Drawing.Point(680, 100);
+         this.scoreLabel.Name = "scoreLabel";
+         this.scoreLabel.Size = new System.Drawing.Size(150, 20);
+         this.scoreLabel.TabIndex = 5;
+         this.scoreLabel.Text = "00000000";
+         this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+         // 
          // SnakeGame
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.Gray;
          this.ClientSize = new System.Drawing.Size(900, 634);
+         this.Controls.Add(this.scoreLabel);
+         this.Controls.Add(this.scoreTextLabel);
+         this.Controls.Add(this.playPauseButton);
          this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.sideInfoPictureBox);
          this.Controls.Add(this.menuStrip1);
@@ -156,5 +197,8 @@
       private System.Windows.Forms.ToolStripMenuItem menuQuit;
       private System.Windows.Forms.ToolStripMenuItem aboutMenuTab;
       private System.Windows.Forms.ToolStripMenuItem menuAbout;
+      private System.Windows.Forms.Button playPauseButton;
+      private System.Windows.Forms.Label scoreTextLabel;
+      private System.Windows.Forms.Label scoreLabel;
    }
 }
