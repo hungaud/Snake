@@ -12,8 +12,14 @@ namespace Snake {
    public partial class SnakeGame : Form {
 
       private int score;
-      private String playButtonLabel = "P L A Y";
-
+      private readonly int POINTS = 10;
+      private readonly int XOFFSET = 5;
+      private readonly int YOFFSET = 29;
+     // private String playButtonLabel = "P L A Y";
+      private bool pause;
+      private int[,] gameBoard;
+      private Node snake;
+      private Node food;
 
 
       public SnakeGame() {
@@ -25,11 +31,15 @@ namespace Snake {
 
       private void InitializeGame() {
          this.score = 0;
-         scoreLabel.Text = score.ToString();
+         this.scoreLabel.Text = score.ToString();
+         this.pause = true;
+         gameBoard = new int [20,20];
+         snake = new SnakeNode();
+         food = new FoodNode();
+
+         
 
       }
-
-
    }
 }
 

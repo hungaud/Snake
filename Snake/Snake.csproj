@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodNode.cs" />
+    <Compile Include="UpdateGame.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="SnakeGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +65,7 @@
     <Compile Include="SnakeHome.Designer.cs">
       <DependentUpon>SnakeHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="SnakeNode.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

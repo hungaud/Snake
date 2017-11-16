@@ -8,10 +8,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Snake {
-   public partial class SnakeGame : Form {
+   public partial class SnakeGame {
+
+      public bool IsPause {
+         get {
+            return pause;
+         }
+         set {
+            pause = value;
+         }
+      }
 
       private void playPauseButton_Click(object sender, EventArgs e) {
-         MessageBox.Show("IT WORKED");
+         if (IsPause) {
+            IsPause = false;
+            playPauseButton.Text = "P A U S E";
+         } else {
+            IsPause = true;
+            playPauseButton.Text = "P L A Y";
+
+         }
       }
 
    }
