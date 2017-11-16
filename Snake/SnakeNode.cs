@@ -11,6 +11,7 @@ namespace Snake {
       private Direction d;
       private int xCoordinate;
       private int yCoordinate;
+      private bool isHead;
      //private int size;
       private Random r;
 
@@ -35,15 +36,30 @@ namespace Snake {
          }
       }
 
-      public SnakeNode(int x, int y) : this(Direction.Null, x, y) {
+      public Direction directtion {
+         get {
+            return this.d;
+         }
+         set {
+            this.d = value;
+         }
+      }
+
+      public SnakeNode(int x, int y, bool isHead) : this(Direction.Null, x, y, isHead) {
          
       }
 
-      public SnakeNode(Direction d, int x, int y) : base() {
+      public SnakeNode(Direction d, int x, int y, bool isHead) : base() {
          this.d = d;
          r = new Random();
-         xCoordinate = x + (r.Next(20) * 20);
-         yCoordinate = y + (r.Next(20) * 20);
+         this.isHead = isHead;
+         if (isHead) {
+            xCoordinate = x + (r.Next(20) * 20);
+            yCoordinate = y + (r.Next(20) * 20);
+         } else {
+            this.xCoordinate = x;
+            this.yCoordinate = y;
+         }
 
       }
 

@@ -21,7 +21,7 @@ namespace Snake {
 
       private List<SnakeNode> snakeNodeList = new List<SnakeNode>();
       
-      private SnakeNode snake;
+      private SnakeNode snakeHead;
       private Node food;
 
       Timer wt = new Timer();
@@ -47,14 +47,13 @@ namespace Snake {
          this.scoreLabel.Text = score.ToString();
          this.pause = true;
          gameBoard = new int [20,20];
-         snake = new SnakeNode(Node.Direction.East, XOFFSET, YOFFSET);
+         snakeHead = new SnakeNode(Node.Direction.East, XOFFSET, YOFFSET, true);
          food = new FoodNode(XOFFSET, YOFFSET);
          //snake.direction1();
          wt.Start();
 
          Invalidate();  
 
-         
 
       }
 
@@ -64,7 +63,7 @@ namespace Snake {
          SolidBrush blackBrush = new SolidBrush(Color.Black);
          SolidBrush whiteBrush = new SolidBrush(Color.White);
          Rectangle board = new Rectangle(XOFFSET, YOFFSET, 600, 600);
-         Rectangle test = new Rectangle(snake.x, snake.y, 30, 30);
+         Rectangle test = new Rectangle(snakeHead.x, snakeHead.y, 30, 30);
          g.FillRectangle(blackBrush, board);
          g.FillRectangle(whiteBrush, test);
 

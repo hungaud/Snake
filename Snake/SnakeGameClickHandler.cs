@@ -30,5 +30,30 @@ namespace Snake {
          }
       }
 
+      /* public void SnakeGame_KeyDown(object sender, KeyEventArgs e) {
+          if (e.KeyCode == Keys.Right) {
+             MessageBox.Show("right");
+          }
+       }
+       */
+
+
+      protected override void OnKeyDown(KeyEventArgs e) {
+         base.OnKeyDown(e);
+         switch (e.KeyCode) {
+            case Keys.Left:
+               MessageBox.Show("Left");
+               return;
+            case Keys.Right:
+            case Keys.Up:
+            case Keys.Down:
+            if (e.Shift) {
+
+            } else {
+            }
+            break;
+         }
+
+      }
    }
 }
