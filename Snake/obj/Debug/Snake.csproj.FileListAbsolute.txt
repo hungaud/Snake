@@ -19,3 +19,13 @@ C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debu
 C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.SnakeGame.resources
 C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
 C:\Users\Hung Auduong\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.SnakeHome.resources
+D:\Github\Snake\Snake\bin\Debug\Snake.exe.config
+D:\Github\Snake\Snake\obj\Debug\Snake.exe
+D:\Github\Snake\Snake\obj\Debug\Snake.pdb
+D:\Github\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+D:\Github\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
+D:\Github\Snake\Snake\obj\Debug\Snake.SnakeGame.resources
+D:\Github\Snake\Snake\obj\Debug\Snake.SnakeHome.resources
+D:\Github\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.Cache
+D:\Github\Snake\Snake\bin\Debug\Snake.exe
+D:\Github\Snake\Snake\bin\Debug\Snake.pdb

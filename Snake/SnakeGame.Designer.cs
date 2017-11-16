@@ -24,7 +24,6 @@
       /// </summary>
       private void InitializeComponent() {
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.gameFramePictureBox = new System.Windows.Forms.PictureBox();
          this.sideInfoPictureBox = new System.Windows.Forms.PictureBox();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
          this.gameMenuTab = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,7 +36,6 @@
          this.scoreTextLabel = new System.Windows.Forms.Label();
          this.scoreLabel = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.gameFramePictureBox)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.sideInfoPictureBox)).BeginInit();
          this.menuStrip1.SuspendLayout();
          this.SuspendLayout();
@@ -45,20 +43,11 @@
          // pictureBox1
          // 
          this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-         this.pictureBox1.Location = new System.Drawing.Point(540, 569);
+         this.pictureBox1.Location = new System.Drawing.Point(575, 569);
          this.pictureBox1.Name = "pictureBox1";
          this.pictureBox1.Size = new System.Drawing.Size(30, 30);
          this.pictureBox1.TabIndex = 2;
          this.pictureBox1.TabStop = false;
-         // 
-         // gameFramePictureBox
-         // 
-         this.gameFramePictureBox.BackColor = System.Drawing.Color.Black;
-         this.gameFramePictureBox.Location = new System.Drawing.Point(5, 29);
-         this.gameFramePictureBox.Name = "gameFramePictureBox";
-         this.gameFramePictureBox.Size = new System.Drawing.Size(600, 600);
-         this.gameFramePictureBox.TabIndex = 1;
-         this.gameFramePictureBox.TabStop = false;
          // 
          // sideInfoPictureBox
          // 
@@ -169,14 +158,12 @@
          this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.sideInfoPictureBox);
          this.Controls.Add(this.menuStrip1);
-         this.Controls.Add(this.gameFramePictureBox);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
          this.MainMenuStrip = this.menuStrip1;
          this.MaximizeBox = false;
          this.Name = "SnakeGame";
          this.Text = "SnakeGame";
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.gameFramePictureBox)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.sideInfoPictureBox)).EndInit();
          this.menuStrip1.ResumeLayout(false);
          this.menuStrip1.PerformLayout();
@@ -188,7 +175,6 @@
       #endregion
 
       private System.Windows.Forms.PictureBox sideInfoPictureBox;
-      private System.Windows.Forms.PictureBox gameFramePictureBox;
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.MenuStrip menuStrip1;
       private System.Windows.Forms.ToolStripMenuItem gameMenuTab;

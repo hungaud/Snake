@@ -18,15 +18,28 @@ namespace Snake {
      // private String playButtonLabel = "P L A Y";
       private bool pause;
       private int[,] gameBoard;
-      private Node snake;
+
+      private List<SnakeNode> snakeNodeList = new List<SnakeNode>();
+      
+      private SnakeNode snake;
       private Node food;
+
+      Timer wt = new Timer();
 
 
       public SnakeGame() {
          InitializeComponent();
          this.StartPosition = FormStartPosition.Manual;
          this.Location = new Point(0, 0);
+         wt.Interval = 50;
+         wt.Tick += new EventHandler(wt_Tick);
+         wt.Enabled = false;
          InitializeGame();
+         
+      }
+
+      private void wt_Tick(object sender, EventArgs e) {
+         //throw new NotImplementedException();
       }
 
       private void InitializeGame() {
@@ -34,12 +47,30 @@ namespace Snake {
          this.scoreLabel.Text = score.ToString();
          this.pause = true;
          gameBoard = new int [20,20];
-         snake = new SnakeNode();
-         food = new FoodNode();
+         snake = new SnakeNode(Node.Direction.East, XOFFSET, YOFFSET);
+         food = new FoodNode(XOFFSET, YOFFSET);
+         //snake.direction1();
+         wt.Start();
+
+         Invalidate();  
 
          
 
       }
+
+      protected override void OnPaint(PaintEventArgs e) {
+         //base.OnPaint(e);
+         Graphics g = e.Graphics;
+         SolidBrush blackBrush = new SolidBrush(Color.Black);
+         SolidBrush whiteBrush = new SolidBrush(Color.White);
+         Rectangle board = new Rectangle(XOFFSET, YOFFSET, 600, 600);
+         Rectangle test = new Rectangle(snake.x, snake.y, 30, 30);
+         g.FillRectangle(blackBrush, board);
+         g.FillRectangle(whiteBrush, test);
+
+      }
+
+
    }
 }
 
