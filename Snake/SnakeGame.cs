@@ -15,12 +15,12 @@ namespace Snake {
       private readonly int POINTS = 10;
       private readonly int XOFFSET = 5;
       private readonly int YOFFSET = 29;
-     // private String playButtonLabel = "P L A Y";
+      // private String playButtonLabel = "P L A Y";
       private bool pause;
       private int[,] gameBoard;
 
       private List<SnakeNode> snakeNodeList = new List<SnakeNode>();
-      
+
       private SnakeNode snakeHead;
       private Node food;
 
@@ -29,13 +29,17 @@ namespace Snake {
 
       public SnakeGame() {
          InitializeComponent();
+
+
          this.StartPosition = FormStartPosition.Manual;
          this.Location = new Point(0, 0);
          wt.Interval = 50;
          wt.Tick += new EventHandler(wt_Tick);
          wt.Enabled = false;
          InitializeGame();
-         
+
+
+
       }
 
       private void wt_Tick(object sender, EventArgs e) {
@@ -46,13 +50,13 @@ namespace Snake {
          this.score = 0;
          this.scoreLabel.Text = score.ToString();
          this.pause = true;
-         gameBoard = new int [20,20];
+         gameBoard = new int[20, 20];
          snakeHead = new SnakeNode(Node.Direction.East, XOFFSET, YOFFSET, true);
          food = new FoodNode(XOFFSET, YOFFSET);
          //snake.direction1();
          wt.Start();
 
-         Invalidate();  
+         Invalidate();
 
 
       }
@@ -68,7 +72,6 @@ namespace Snake {
          g.FillRectangle(whiteBrush, test);
 
       }
-
 
    }
 }

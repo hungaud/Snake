@@ -5,10 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using System.Windows.Forms;
 
 namespace Snake {
    public partial class SnakeGame {
+      private object button1;
+
+ 
 
       public bool IsPause {
          get {
@@ -30,30 +34,46 @@ namespace Snake {
          }
       }
 
-      /* public void SnakeGame_KeyDown(object sender, KeyEventArgs e) {
-          if (e.KeyCode == Keys.Right) {
-             MessageBox.Show("right");
-          }
-       }
-       */
-
-
-      protected override void OnKeyDown(KeyEventArgs e) {
-         base.OnKeyDown(e);
-         switch (e.KeyCode) {
-            case Keys.Left:
-               MessageBox.Show("Left");
-               return;
-            case Keys.Right:
-            case Keys.Up:
+      protected override bool ProcessCmdKey(ref Message msg, Keys keyData) {
+         switch (keyData) {
             case Keys.Down:
-            if (e.Shift) {
+               MessageBox.Show("DOWN is pressed");
 
-            } else {
+               return true;
+            case Keys.Up:
+               MessageBox.Show("UP is pressed");
+
+               return true;
+            case Keys.Right:
+               MessageBox.Show("RIGHT is pressed");
+
+               return true;
+            case Keys.Left:
+               MessageBox.Show("LEFT is pressed");
+
+               return true;
+         }
+         return base.ProcessCmdKey(ref msg, keyData);
+      }
+
+
+      /*   public void Form_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyData == Keys.F) {
+               MessageBox.Show("f is pressed");
             }
-            break;
          }
 
-      }
+
+
+        public void Window_KeyDown(object sender, KeyEventArgs e) {
+           if (e.KeyCode == Keys.Space) {
+              MessageBox.Show("Down");
+           }
+
+        }*/
+
+
+
+
    }
 }
